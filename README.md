@@ -87,7 +87,68 @@ out/
 **Key fields:** `user_id`, `night_plays`, `night_duration_sec`
 
 ---
+**Task 1: User Favorite Genres (output/user_favorite_genres/)**
 
+| user_id | genre | play_count |
+|:-------:|:-----:|-----------:|
+| U1      | Pop   | 1          |
+| U1      | Rock  | 1          |
+| U2      | Pop   | 1          |
+| U2      | Jazz  | 1          |
+| U3      | Rock  | 1          |
+| U3      | Pop   | 1          |
+| U4      | Pop   | 1          |
+
+**Task 2: Average Listen Time (output/avg_listen_time_per_song/)**
+
+| song_id | avg_duration_seconds |
+|:-------:|---------------------:|
+| S1      | 205.0               |
+| S2      | 165.0               |
+| S3      | 215.0               |
+| S4      | 300.0               |
+| S5      | 220.0               |
+
+**Task 3: Genre Loyalty Scores (output/genre_loyalty_scores/)**
+
+| user_id | loyalty_score |
+|:-------:|--------------:|
+| *(none)* | *(empty)*    |
+
+**Task 4: Night Owl Users (output/night_owl_users/)**
+
+| user_id |
+|:-------:|
+| U2      |
+| U3      |
+| U4      |
+---
+# Sample Datasets
+
+## 1. listening_logs.csv
+
+| user_id | song_id | timestamp           | duration_sec |
+|--------:|:-------:|:--------------------|-------------:|
+| U1      | S1      | 2025-03-23 14:05:00 | 210          |
+| U1      | S2      | 2025-03-23 22:45:00 | 180          |
+| U2      | S3      | 2025-03-24 01:15:00 | 240          |
+| U2      | S1      | 2025-03-24 12:30:00 | 200          |
+| U3      | S2      | 2025-03-24 03:50:00 | 150          |
+| U3      | S4      | 2025-03-24 18:10:00 | 300          |
+| U4      | S5      | 2025-03-25 00:40:00 | 220          |
+| U4      | S3      | 2025-03-25 16:05:00 | 190          |
+
+## 2. songs_metadata.csv
+
+| song_id | title               | artist        | genre | mood      |
+|:-------:|:--------------------|:--------------|:-----:|:---------:|
+| S1      | Lost Stars          | Adam Levine   | Pop   | Happy     |
+| S2      | Bohemian Rhapsody   | Queen         | Rock  | Energetic |
+| S3      | Take Five           | Dave Brubeck  | Jazz  | Chill     |
+| S4      | Shape of You        | Ed Sheeran    | Pop   | Happy     |
+| S5      | Someone Like You    | Adele         | Pop   | Sad       |
+
+---
 ## Execution Instructions
 ## *Prerequisites*
 
